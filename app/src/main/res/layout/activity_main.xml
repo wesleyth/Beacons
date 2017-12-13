@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".activity.MainActivity"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:padding="20dp"
+        android:layout_margin="10dp"
+        android:background="@color/gray"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Beacon"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_marginBottom="2dp"/>
+
+        <TextView
+            android:id="@+id/beacon_uuid_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/beacon_distance_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/beacon_major_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/beacon_minor_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Promotion"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:paddingTop="10dp"
+            android:layout_marginBottom="2dp"/>
+
+        <TextView
+            android:id="@+id/beacon_promotion_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text=""
+            android:textSize="16sp"
+            />
+
+        <TextView
+            android:id="@+id/beacon_promotion_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text=""
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/beacon_promotion_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text=""
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/beacon_promotion_show_notification"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text=""
+            android:textSize="16sp"/>
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:id="@+id/button_login"
+                android:background="@drawable/button_background"
+                android:layout_marginBottom="10dp"
+                android:text="login"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:id="@+id/button_logout"
+                android:background="@drawable/button_background"
+                android:layout_marginBottom="10dp"
+                android:text="logout"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:id="@+id/button_beaconsearch"
+                android:background="@drawable/button_background"
+                android:layout_marginBottom="10dp"
+                android:onClick="testBeaconSearch"
+                android:text="beacon search"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:onClick="beaconStart"
+                android:background="@drawable/button_background"
+                android:layout_marginBottom="10dp"
+                android:text="Beacon start scan"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/button_background"
+                android:layout_marginBottom="10dp"
+                android:onClick="beaconStop"
+                android:text="Beacon stop scan"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:id="@+id/button_getowners"
+                android:background="@drawable/button_background"
+                android:layout_marginBottom="10dp"
+                android:text="Owners"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:id="@+id/button_getowner"
+                android:background="@drawable/button_background"
+                android:layout_marginBottom="10dp"
+                android:text="Owner by id"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:id="@+id/button_owner_notify_enable"
+                android:background="@drawable/button_background"
+                android:layout_marginBottom="10dp"
+                android:text="Owner notification enable"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:id="@+id/button_owner_notify_disable"
+                android:background="@drawable/button_background"
+                android:layout_marginBottom="10dp"
+                android:text="Owner notification disable"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:id="@+id/button_owner_block_enable"
+                android:background="@drawable/button_background"
+                android:layout_marginBottom="10dp"
+                android:text="Owner block enable"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:id="@+id/button_owner_block_disable"
+                android:background="@drawable/button_background"
+                android:layout_marginBottom="10dp"
+                android:text="Owner block disable"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:id="@+id/button_promotion"
+                android:background="@drawable/button_background"
+                android:layout_marginBottom="10dp"
+                android:text="Promotion by id"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:id="@+id/button_createuser"
+                android:background="@drawable/button_background"
+                android:layout_marginBottom="10dp"
+                android:text="User create"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:id="@+id/button_resetpassword"
+                android:background="@drawable/button_background"
+                android:layout_marginBottom="10dp"
+                android:text="User reset password"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:id="@+id/button_updatepassword"
+                android:background="@drawable/button_background"
+                android:layout_marginBottom="10dp"
+                android:text="User change password"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:id="@+id/button_inbox"
+                android:background="@drawable/button_background"
+                android:layout_marginBottom="10dp"
+                android:text="Inbox"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:id="@+id/button_inboxitem"
+                android:background="@drawable/button_background"
+                android:layout_marginBottom="10dp"
+                android:text="Inbox item by id"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:id="@+id/button_inboxitem_delete"
+                android:background="@drawable/button_background"
+                android:layout_marginBottom="10dp"
+                android:text="Inbox delete by id"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:id="@+id/button_inboxitem_read"
+                android:background="@drawable/button_background"
+                android:layout_marginBottom="10dp"
+                android:text="Inbox item is read"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:id="@+id/button_inboxitem_unread"
+                android:background="@drawable/button_background"
+                android:layout_marginBottom="10dp"
+                android:onClick="inboxItemUnread"
+                android:text="Inbox item is unread"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:id="@+id/button_profile"
+                android:background="@drawable/button_background"
+                android:layout_marginBottom="10dp"
+                android:text="Profile"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:id="@+id/button_updateprofile"
+                android:background="@drawable/button_background"
+                android:layout_marginBottom="10dp"
+                android:text="Profile update"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
