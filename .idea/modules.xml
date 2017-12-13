@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/LightcurbSDKTestApp.iml" filepath="$PROJECT_DIR$/LightcurbSDKTestApp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Beacons.iml" filepath="$PROJECT_DIR$/Beacons.iml" />
+      <module fileurl="file://C:\Users\jeroe\AndroidStudioProjects\Opendag\Beacons\LightcurbSDKTestApp.iml" filepath="C:\Users\jeroe\AndroidStudioProjects\Opendag\Beacons\LightcurbSDKTestApp.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>

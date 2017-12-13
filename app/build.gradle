@@ -31,4 +31,5 @@ dependencies {
     compile(name: 'LightcurbSDK', ext: 'aar')
     compile 'com.android.support:appcompat-v7:25.0.1'
     compile 'com.android.support.constraint:constraint-layout:1.0.2'
+    compile 'com.loopj.android:android-async-http:1.4.9'
 }
